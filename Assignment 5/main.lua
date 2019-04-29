@@ -518,6 +518,7 @@ local function playerCollision (event)
        	
 
        	local GameOver = display.newText("Game Over", display.contentCenterX, display.contentCenterY, native.systemFont, 50)
+	GameOver:setFillColor (1,0,0)
        	local timerPause = timer.pause(gameTimer)
        	timerT:setFillColor (0,1,0)
        	upArrow:removeEventListener( "touch", upArrow )
